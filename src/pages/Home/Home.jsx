@@ -1,8 +1,11 @@
+import { Banner } from "../../components/Home/Banner/Banner";
+import Write from "../../components/Home/Write/Write";
 
 const Home = () => {
     return (
         <div>
-            ddd
+            <Banner/>
+            <Write/>
         </div>
     );
 };

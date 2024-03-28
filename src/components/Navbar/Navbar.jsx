@@ -28,22 +28,22 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link>HOME</Link>
+                <Link to={"/"}>HOME</Link>
               </li>
               <li>
-                <Link> NOTICE</Link>
+                <Link to={"/notice"}> NOTICE</Link>
               </li>
               <li>
-                <Link> GALLERY</Link>
+                <Link to={"/gallery"}> GALLERY</Link>
               </li>
               <li>
-                <Link>ABOUT US</Link>
+                <Link to={"/about"}>ABOUT US</Link>
               </li>
               <li>
-                <Link>COMPANIES</Link>
+                <Link to={"/companies"}>COMPANIES</Link>
               </li>
               <li>
-                <Link>CONTACT US</Link>
+                <Link to={"contact"}>CONTACT US</Link>
               </li>
             </ul>
           </div>
@@ -51,24 +51,24 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link>HOME</Link>
-            </li>
-            <li>
-              <Link> NOTICE</Link>
-            </li>
-            <li>
-              <Link> GALLERY</Link>
-            </li>
-            <li>
-              <Link>ABOUT US</Link>
-            </li>
-            <li>
-              <Link>COMPANIES</Link>
-            </li>
-            <li>
-              <Link>CONTACT US</Link>
-            </li>
+          <li>
+                <Link to={"/"}>HOME</Link>
+              </li>
+              <li>
+                <Link to={"/notice"}> NOTICE</Link>
+              </li>
+              <li>
+                <Link to={"/gallery"}> GALLERY</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>ABOUT US</Link>
+              </li>
+              <li>
+                <Link to={"/companies"}>COMPANIES</Link>
+              </li>
+              <li>
+                <Link to={"contact"}>CONTACT US</Link>
+              </li>
           </ul>
         </div>
         <div className=""></div>
