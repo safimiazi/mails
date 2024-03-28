@@ -59,7 +59,7 @@ const HomeService = () => {
 
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 grid-cols-1">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 grid-cols-1">
         <div>
           <h4 className="text-center text-2xl">Our Service</h4>
           <div className="h-1 bg-[#094892] w-32 mt-1 mx-auto"></div>
