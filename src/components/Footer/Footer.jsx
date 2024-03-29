@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import bg from "../../assets/HomeFooter/bg.jpg"
+import icon from "../../assets/HomeFooter/icon.jpg"
+import page from "../../assets/HomeFooter/page.jpg"
 const Footer = () => {
   return (
     <div className="bg-[#0c294c] text-white">
@@ -29,7 +31,17 @@ const Footer = () => {
         <nav>
         <h6 className="footer-title border-b-2 w-full text-white text-2xl">OUR FACEBOOK PAGE</h6>
          {/* facebook */}
-         <a href="https://www.facebook.com/RaipurAutoRiceMills" target="_blank" rel="noopener noreferrer" className="link text-xl link-hover">Visit our Facebook page</a>
+        <div className="relative">
+        <img src={bg} className="w-full" alt="" />
+        <div className="flex absolute  top-2 left-2">
+          <img className="w-16 " src={icon} alt="" />
+          <div>
+          <h3 className="hover:underline text-xl font-semibold">Raipur auto Rice...</h3>
+          <p>1.6k followers</p>
+          </div>
+
+        </div>
+        </div>
 
         </nav>
         <nav>

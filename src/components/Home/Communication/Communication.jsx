@@ -1,6 +1,9 @@
 import img1 from "../../../assets/Communication/1.jpg";
 import img2 from "../../../assets/Communication/2.jpg";
 import img3 from "../../../assets/Communication/3.jpg";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+
 const Communication = () => {
   return (
     <div>
@@ -10,14 +13,14 @@ const Communication = () => {
           <div className="h-1 bg-[#094892] w-32 mt-1 mx-auto"></div>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mt-10">
-          <div className="card rounded-none">
+          <div className="group card relative rounded-none">
             <figure>
               <img src={img1} className="w-full h-56" alt="Shoes" />
             </figure>
             <div className="mt-5">
               <p>
-              <span className="text-blue-500">
-              Murshidul Alam (Operation Manager) 
+                <span className="text-blue-500">
+                  Murshidul Alam (Operation Manager)
                 </span>{" "}
                 Mr.Murshidul Alam is directly
                 involved in the direct management of this organization. The
@@ -27,25 +30,37 @@ const Communication = () => {
               <button className="w-full py-2 rounded-full mt-10 text-bold text-2xl text-white bg-[#094892]">
                 Call +8801733138179
               </button>
+              <div className="group-hover:block hidden">
+                <div className="absolute top-40 w-full h-20 bg-white opacity-40 flex items-center gap-2 justify-end px-10 ">
+                  <IoLogoFacebook className="text-2xl" />
+                  <FaLinkedin className="text-2xl" />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="card rounded-none">
+          <div className="group card rounded-none relative">
             <figure>
               <img src={img2} className="w-full h-56" alt="Shoes" />
             </figure>
             <div className="mt-5">
               <p>
                 <span className="text-blue-500">
-                Mr. Kamruzzaman ( Manager)
+                  Mr. Kamruzzaman ( Manager)
                 </span>{" "}
                 Mr. Zaman oversees the accounting and management of this organization. This person has been carrying out his duties with his professional attitude from the very beginning of this organization.
               </p>
               <button className="w-full py-2 rounded-full text-bold text-2xl text-white mt-10 bg-[#094892]">
                 Call +8801718626634
               </button>
+              <div className="group-hover:block hidden">
+                <div className="absolute top-40 w-full h-20 bg-white opacity-40 flex items-center gap-2 justify-end px-10 ">
+                  <IoLogoFacebook className="text-2xl" />
+                  <FaLinkedin className="text-2xl" />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="card rounded-none">
+          <div className="group card rounded-none relative">
             <figure>
               <img src={img3} className="w-full h-56" alt="Shoes" />
             </figure>
@@ -62,6 +77,12 @@ const Communication = () => {
               <button className="w-full py-2 rounded-full text-bold text-2xl text-white mt-10 bg-[#094892]">
                 Call +8801712552009
               </button>
+              <div className="group-hover:block hidden">
+                <div className="absolute top-40 w-full h-20 bg-white opacity-40 flex items-center gap-2 justify-end px-10 ">
+                  <IoLogoFacebook className="text-2xl" />
+                  <FaLinkedin className="text-2xl" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

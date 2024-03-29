@@ -67,11 +67,14 @@ const HomeService = () => {
             {items.map((item, index) => (
               <div key={index} className="accordion-item border-b">
                 <div
-                  className={`accordion-title text-xl py-1 ${
-                    index === activeIndex ? "active" : ""
-                  }`}
+                  className={`accordion-title text-xl py-3 flex items-center gap-2 bg-gray-100 ${index === activeIndex ? "rounded-t-2xl" : "rounded-t-2xl"}  ${index === activeIndex ? "active" : ""
+                    }`}
                   onClick={() => handleClick(index)}
                 >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-blue-950 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+
                   {item.title}
                 </div>
                 {index === activeIndex && (

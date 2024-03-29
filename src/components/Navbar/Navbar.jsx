@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import icon from "../../assets/HomeBanner/Raipur-Auto-Rice-Mills.svg"
 const Navbar = () => {
   return (
     <div className=" bg-[#0c294c] text-[#9DC6F9]">
       <div className="navbar max-w-7xl mx-auto">
-        <div className="navbar-start">
-          <div className="dropdown">
+        <div className="navbar-center mx-auto ml-0 pl-0">
+          <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">RAIPUE AUTO RICE MILS</a>
+          <img className="w-72" src={icon} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
