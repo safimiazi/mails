@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className=" bg-[#0c294c]">
+    <div className=" bg-[#0c294c] text-[#9DC6F9]">
       <div className="navbar max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -28,22 +28,39 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to={"/"}>HOME</Link>
+                <NavLink
+                  exact
+                  to="/"
+                  activeClassName="text-white"
+                  className={({ isPending }) => (isPending ? "pending" : "")}
+                >
+                  HOME
+                </NavLink>
               </li>
               <li>
-                <Link to={"/notice"}> NOTICE</Link>
+                <NavLink to="/notice" activeClassName="text-white">
+                  NOTICE
+                </NavLink>
               </li>
               <li>
-                <Link to={"/gallery"}> GALLERY</Link>
+                <NavLink to="/gallery" activeClassName="text-white">
+                  GALLERY
+                </NavLink>
               </li>
               <li>
-                <Link to={"/about"}>ABOUT US</Link>
+                <NavLink to="/about" activeClassName="text-white">
+                  ABOUT US
+                </NavLink>
               </li>
               <li>
-                <Link to={"/companies"}>COMPANIES</Link>
+                <NavLink to="/companies" activeClassName="text-white">
+                  COMPANIES
+                </NavLink>
               </li>
               <li>
-                <Link to={"contact"}>CONTACT US</Link>
+                <NavLink to="/contact" activeClassName="text-white">
+                  CONTACT US
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -51,24 +68,36 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-          <li>
-                <Link to={"/"}>HOME</Link>
-              </li>
-              <li>
-                <Link to={"/notice"}> NOTICE</Link>
-              </li>
-              <li>
-                <Link to={"/gallery"}> GALLERY</Link>
-              </li>
-              <li>
-                <Link to={"/about"}>ABOUT US</Link>
-              </li>
-              <li>
-                <Link to={"/companies"}>COMPANIES</Link>
-              </li>
-              <li>
-                <Link to={"contact"}>CONTACT US</Link>
-              </li>
+            <li>
+              <NavLink exact to="/" activeClassName="text-white">
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/notice" activeClassName="text-white">
+                NOTICE
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/gallery" activeClassName="text-white">
+                GALLERY
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" activeClassName="text-white">
+                ABOUT US
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/companies" activeClassName="text-white">
+                COMPANIES
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" activeClassName="text-white">
+                CONTACT US
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className=""></div>

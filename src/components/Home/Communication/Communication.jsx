@@ -4,7 +4,7 @@ import img3 from "../../../assets/Communication/3.jpg";
 const Communication = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto mt-32 px-4">
+      <div className="max-w-7xl mx-auto mt-32 mb-32 px-4">
         <div>
           <h4 className="text-center text-2xl">For Communication !!</h4>
           <div className="h-1 bg-[#094892] w-32 mt-1 mx-auto"></div>
