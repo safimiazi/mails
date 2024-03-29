@@ -52,11 +52,11 @@ const Navbar = () => {
                   ABOUT US
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/companies" activeClassName="text-white">
                   COMPANIES
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/contact" activeClassName="text-white">
                   CONTACT US
@@ -88,11 +88,11 @@ const Navbar = () => {
                 ABOUT US
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/companies" activeClassName="text-white">
                 COMPANIES
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/contact" activeClassName="text-white">
                 CONTACT US

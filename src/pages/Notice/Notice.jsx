@@ -185,7 +185,9 @@ const Notice = () => {
     return (
         <div className='bg-[#6d685a30] py-20'>
             <div className='max-w-7xl  mx-auto bg-white'>
-                <div className='flex justify-center py-10'>
+                <h3 className='text-xl font-semibold text-center pt-10'>Notice Board</h3>
+
+                <div className='flex justify-center pb-10'>
                     <img src={icon} alt="" />
                 </div>
 
